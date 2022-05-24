@@ -14,7 +14,8 @@ aprovisionamiento que provee Vagrant usando Shell para que los servicios del pun
 Streama) queden aprovisionados de manera automática.
 
 
-**VAGRANT File del STREAMA:
+==VAGRANT File del STREAMA:
+
 Vagrant.configure("2") do |config|
   if Vagrant.has_plugin? "vagrant-vbguest"
     config.vbguest.no_install = true
@@ -29,7 +30,8 @@ Vagrant.configure("2") do |config|
   end
 end
 
-**VAGRANT file del FIREWALL:
+==VAGRANT file del FIREWALL:
+
 Vagrant.configure("2") do |config|
 	if Vagrant.has_plugin?("vagrant-vbguest")
 		config.vbguest.auto_update = false 
